@@ -14,8 +14,8 @@ const Landing = () => {
             Get Easy <br />
             loans on your<br />
             <span className="highlight">USED CAR</span>
-          </h1>
-          
+            </h1>
+            
           <div className="info-cards-grid">
             <div className="info-card-item">
               <div className="info-card-icon">
@@ -31,19 +31,19 @@ const Landing = () => {
                 <img src="/quickmoney.png" alt="Quick Approval Icon" className="info-card-icon-img" />
               </div>
               <div className="info-card-text">
-                <h3>Quick Approval</h3>
-                <p>Get approved within 12 hours</p>
-              </div>
+                  <h3>Quick Approval</h3>
+                  <p>Get approved within 12 hours</p>
+                </div>
             </div>
             <div className="info-card-item">
               <div className="info-card-icon">
                 <img src="/fastmoney.png" alt="Fast Disbursal Icon" className="info-card-icon-img" />
               </div>
               <div className="info-card-text">
-                <h3>Fast Disbursal</h3>
-                <p>Money in your account within 24 hours</p>
+                  <h3>Fast Disbursal</h3>
+                  <p>Money in your account within 24 hours</p>
+                </div>
               </div>
-            </div>
           </div>
           
           <div className="achievement-stats">
@@ -57,12 +57,12 @@ const Landing = () => {
             </div>
           </div>
         </div>
-        
+
         <div className="landing-right">
           <img src="/landing12.jpg" alt="Car Loan Offer" className="landing-right-image" />
         </div>
       </section>
-    </div>
+        </div>
   )
 }
 

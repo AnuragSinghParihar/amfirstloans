@@ -14,11 +14,6 @@ import PrivacyPolicy from './components/PrivacyPolicy';
 
 const Navbar = ({ isScrolled, isMenuOpen, toggleMenu, setIsMenuOpen }) => {
   const location = useLocation();
-  const isFormPage = location.pathname === '/carloanform';
-
-  if (isFormPage) {
-    return null; 
-  }
 
   return (
     <div className={`navbar-container ${isScrolled ? 'scrolled' : ''}`}>
@@ -40,7 +35,7 @@ const Navbar = ({ isScrolled, isMenuOpen, toggleMenu, setIsMenuOpen }) => {
           <a href="/#about" className='nav-items' onClick={() => setIsMenuOpen(false)}>About</a>
           <a href="/#Features" className='nav-items' onClick={() => setIsMenuOpen(false)}>Features</a>
           <a href="/#contact-main" className='nav-items' onClick={() => setIsMenuOpen(false)}>Contact Us</a>
-          <a href="/carloanform" className="btn-apply-navbar" onClick={() => setIsMenuOpen(false)}>Apply Now</a>
+          <a href="/#carloanform" className="btn-apply-navbar" onClick={() => setIsMenuOpen(false)}>Apply Now</a>
         </div>
       </nav>
     </div>
@@ -49,9 +44,6 @@ const Navbar = ({ isScrolled, isMenuOpen, toggleMenu, setIsMenuOpen }) => {
 
 // Footer wrapper to conditionally render Footer
 const FooterWrapper = () => {
-  const location = useLocation();
-  const isFormPage = location.pathname === '/carloanform';
-  if (isFormPage) return null;
   return <Footer />;
 };
 
@@ -82,21 +74,21 @@ const App = () => {
       />
 
       <div className="main-content-wrapper">
-        <Routes>
-          <Route path="/carloanform" element={<CarLoanForm />} />
+      <Routes>
           <Route path="/cookie-policy" element={<Cookie />} />
           <Route path="/disclaimer" element={<Disclaimer />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/" element={
-            <>
-              <Landing />
-              <Features />
-              <Documentation/>
-              <AboutUs/>
-              <Contact />
-            </>
-          } />
-        </Routes>
+        <Route path="/" element={
+          <>
+            <Landing />
+            <Features />
+            <Documentation/>
+            <AboutUs/>
+            <CarLoanForm />
+            <Contact />
+          </>
+        } />
+      </Routes>
       </div>
 
       <FooterWrapper />

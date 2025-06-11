@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import './CarLoanForm.css';
 
 const CarLoanForm = () => {
-  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
     carModel: '',
-    address: '',
+    city: '',
     agreeToTerms: false
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -54,12 +52,12 @@ const CarLoanForm = () => {
           email: '',
           phone: '',
           carModel: '',
-          address: '',
+          city: '',
           agreeToTerms: false
         });
         setTimeout(() => {
-          navigate('/');
-        }, 3000);
+          setSubmitStatus(null);
+        }, 5000);
       } else {
         setSubmitStatus('error');
       }
@@ -71,16 +69,12 @@ const CarLoanForm = () => {
     }
   };
 
-  const handleGoBack = () => {
-    navigate('/');
-  };
-
   return (
-    <div className="carloanform-page">
+    <section id="carloanform" className="carloanform-section">
       <div className="form-wrapper">
         <div className="form-header">
           <h1>Apply for Car Loan</h1>
-          <p>Fill in your details to get started</p>
+          <p>Fill in your details to get started with your car loan application</p>
         </div>
 
         {submitStatus === 'success' && (
@@ -154,16 +148,15 @@ const CarLoanForm = () => {
           </div>
 
           <div className="form-group">
-            <label htmlFor="address">City</label>
-            <textarea
+            <label htmlFor="city">City</label>
+            <input
               type="text"
-              id="address"
-              name="City"
-              value={formData.address}
+              id="city"
+              name="city"
+              value={formData.city}
               onChange={handleChange}
-              placeholder="Enter your complete address"
+              placeholder="Enter your city"
               required
-              rows="3"
               disabled={isSubmitting}
             />
           </div>
@@ -188,18 +181,9 @@ const CarLoanForm = () => {
           >
             {isSubmitting ? 'Submitting...' : 'Submit Application'}
           </button>
-          <button 
-            type="button" 
-            className="go-back-button" 
-            onClick={handleGoBack}
-            disabled={isSubmitting}
-            aria-label="Go back to home page"
-          >
-            Go Back
-          </button>
         </form>
       </div>
-    </div>
+    </section>
   );
 };
 
