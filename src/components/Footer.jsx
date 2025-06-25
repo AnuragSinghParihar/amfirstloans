@@ -57,7 +57,7 @@ Our mission: Easy. Fast. 200% Loan for Used Cars.
 
     <div className="amfirst-footer-bottom">
       <p>
-        © 2025 AM First Finance Private Limited. All rights reserved. 
+        © 2025 AM First Assistance LLP. All rights reserved. 
         <a href="/cookie-policy">Cookie Policy</a> | 
         <a href="/disclaimer">Disclaimer</a> | 
         <a href="/privacy-policy">Privacy Policy</a>
