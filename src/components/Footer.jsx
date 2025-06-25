@@ -27,7 +27,7 @@ Our mission: Easy. Fast. 200% Loan for Used Cars.
         <div className="social-follow">
            <h3>Follow us on</h3>
             <div className="social-icons">
-              <a href="https://www.instagram.com/amfirstloans/" aria-label="Instagram"><img src="/instagramicon.webp" alt="Instagram"  /></a>
+              <a href="https://www.instagram.com/_amfirst_?igsh=MW5hdzh0dzZyaTI0dw==" aria-label="Instagram"><img src="/instagramicon.webp" alt="Instagram"  /></a>
               <a href="https://x.com/amfirstloans" aria-label="Twitter"><img src="/x.png" alt="Twitter" /></a>
               <a href="https://www.facebook.com/profile.php?id=61577128086595" aria-label="Facebook"><img src="/facebookicon.webp" alt="Facebook" /></a>
               <a href="https://www.linkedin.com/in/am-first-8b09b736a/" aria-label="LinkedIn"><img src="/linkedinicon.webp" alt="LinkedIn" /></a>
