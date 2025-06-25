@@ -1,0 +1,110 @@
+.privacy-policy {
+    padding: 0;
+    background-color: var(--bg-light);
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding-top: 100px; /* Adjust for fixed navbar */
+    padding-bottom: 40px; /* Add padding to the bottom of the privacy policy section */
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 0;
+}
+
+.privacy-policy-container {
+    background-color: var(--bg-white);
+    max-width: 1200px;
+    width: 80%;
+    padding: 40px;
+    margin: 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px var(--shadow-light);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.privacy-policy-container h1 {
+    font-size: 2.2rem;
+    color: var(--primary);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--border-light);
+    font-weight: 700;
+}
+
+.privacy-policy-container h1:first-child {
+    font-size: 2.8rem;
+    text-align: center;
+    color: var(--text-light);
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    padding: 20px;
+    margin-top: 0;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 4px 10px var(--shadow-medium);
+}
+
+.privacy-policy-container h2 {
+    font-size: 1.8rem;
+    color: var(--primary);
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.privacy-policy-container p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: var(--text-gray);
+}
+
+.privacy-policy-container p:last-child {
+    margin-bottom: 0;
+}
+
+.privacy-policy-container ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.privacy-policy-container li {
+    font-size: 1rem;
+    color: var(--text-gray);
+    margin-bottom: 5px;
+}
+
+.privacy-policy-container a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.privacy-policy-container a:hover {
+    text-decoration: underline;
+}
+
+.privacy-policy-container > *:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .privacy-policy-container {
+        width: 95%;
+        padding: 25px;
+    }
+    .privacy-policy-container h1 {
+        font-size: 1.8rem;
+    }
+    .privacy-policy-container h1:first-child {
+        font-size: 2.2rem;
+    }
+    .privacy-policy-container h2 {
+        font-size: 1.5rem;
+    }
+    .privacy-policy-container p,
+    .privacy-policy-container li {
+        font-size: 0.95rem;
+    }
+} 

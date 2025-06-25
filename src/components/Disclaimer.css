@@ -1,0 +1,82 @@
+.disclaimer {
+    padding: 0;
+    background-color: var(--bg-light);
+    display: flex; /* Re-introduce flex to center the container */
+    justify-content: center; /* Center horizontally */
+    align-items: stretch; /* Allow items to stretch to fill the container vertically */
+    padding-top: 100px; /* Adjust for fixed navbar */
+    padding-bottom: 40px; /* Add padding to the bottom of the disclaimer section */
+    width: 100%; /* Ensure it takes full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+    margin-bottom: 0; /* Ensure no bottom margin creates a gap */
+}
+
+.disclaimer-container {
+    background-color: var(--bg-white);
+    max-width: 1200px; /* Cap the max-width for very large screens */
+    width: 80%; /* Use a percentage for wider fill */
+    padding: 40px; /* Uniform padding */
+    margin: 0; /* Let flexbox handle centering */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px var(--shadow-light);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.disclaimer-container h1 {
+    font-size: 2.2rem;
+    color: var(--primary);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--border-light);
+    font-weight: 700;
+}
+
+.disclaimer-container h1:first-child {
+    font-size: 2.8rem;
+    text-align: center;
+    color: var(--text-light);
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    padding: 20px;
+    margin-top: 0;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 4px 10px var(--shadow-medium);
+}
+
+.disclaimer-container p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: var(--text-gray);
+}
+
+.disclaimer-container p:last-child {
+    margin-bottom: 0;
+}
+
+.disclaimer-container a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.disclaimer-container a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .disclaimer-container {
+        width: 95%; /* Adjust percentage width for smaller screens */
+        padding: 25px; /* Uniform padding for smaller screens */
+    }
+    .disclaimer-container h1 {
+        font-size: 1.8rem;
+    }
+    .disclaimer-container h1:first-child {
+        font-size: 2.2rem;
+    }
+    .disclaimer-container p {
+        font-size: 0.95rem;
+    }
+} 
